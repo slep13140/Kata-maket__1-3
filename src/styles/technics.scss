@@ -1,0 +1,138 @@
+.technics {
+    min-width: $smPhoneWidth;
+    min-height: 307px;
+    background-color: $primary-color;
+    @media (min-width: $desktopWidth) {
+        width: 1120px;        
+    }
+}
+
+.technics__title {
+    height: 80px;
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $focus-color;
+    letter-spacing: -0.2px;
+    background-image: linear-gradient(to right, $primary-color, $default-color);
+    display: flex;
+    span {
+        width: 288px;
+        height: 48px;
+        margin: 16px;
+    }
+    @media (min-width: $tableWidth) {
+        height: 56px;
+        align-items: center;
+        white-space: nowrap;
+        span {
+            width: 316px;
+            height: 24px;
+            margin-left: 24px;
+        }
+    }
+}
+
+.technics__swiper {
+    min-width: 320px;    
+    height: 228px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: $tableWidth) {
+        height: 160px;
+        margin-top: 24px;
+        overflow: hidden;
+        &--more {
+            overflow: visible;
+            height: 344px;
+        }
+    }
+}
+
+.technics__wrapper {
+    display: flex;        
+    @media (min-width: $tableWidth) {
+        
+        height: 160px;
+        flex-wrap: wrap;        
+    }    
+}
+
+.technics__slide {    
+    background-color: $primary-color;
+    margin-top: 16px;
+    flex-shrink: 0;
+    @media (min-width: $tableWidth) {
+        margin-top: 0;
+    }    
+}
+
+.technics__button {
+    width: 240px;
+    height: 160px;
+    margin-left: 16px;
+    background-color: $default-color;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span {
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 16px;
+        margin-top: 16px;
+    }
+    img {
+        align-self: flex-end;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+    @media (min-width: $tableWidth) {
+        width: 224px;
+        margin-left: 24px;
+    }
+}
+
+.technics-pagination {
+    margin-left: 58px;
+    margin-top: 16px;
+    .swiper-pagination-bullet {
+        background-color: #DDDDDD;
+        width: 12px;
+        height: 12px;        
+        &-active {
+            background-color: #B5B6BC;
+        }    
+    }
+}
+
+.technics__button-more {
+    width: 125px;
+    height: 24px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-medium;
+    color: $success-color;
+    background-color: $primary-color;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: absolute;
+    visibility: hidden;
+    @media (min-width: $tableWidth) {
+        margin-left: 32px;
+        margin-top: 24px;
+        position: relative;
+        visibility: visible;
+    }
+    @media (min-width: $desktopWidth) {
+        margin-left: 40px;
+    }
+}
+.technics__image--noMore {
+    transform: rotate(180deg);
+}

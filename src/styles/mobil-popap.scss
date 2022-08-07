@@ -1,0 +1,42 @@
+.mobil-popap {
+    height: 1800px;    
+    opacity: 0;
+    visibility: hidden;
+    z-index: 50;
+    display: flex;
+    transition: all 0.8s ease 0s;
+    transform: translate(-100%, 0px);
+    @media (min-width: $smPhoneWidth) {
+        width: $tableWidth;
+        flex-direction: column;
+        background-color: $default-color;
+    }
+
+    @media (min-width: $tableWidth) {
+        width: 1439px;
+    }
+
+    @media (min-width: $desktopWidth) {
+        width: 306px;
+        height: 1925px;        
+        visibility: visible;
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+    &--open {
+        visibility: visible;
+        transform: translate(0px, 0px);
+        opacity: 96.05%;
+    }   
+}
+
+.mobil-popap__elem { 
+    position: relative;
+    z-index: 200;
+    filter: drop-shadow(16px 16px 52px rgba(14, 24, 80, 0.2));
+    @media (min-width: $desktopWidth) {
+        filter: none;
+    }    
+}
+

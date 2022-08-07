@@ -1,0 +1,105 @@
+.header-body {
+    min-width: $smPhoneWidth;
+    height: 88px;
+    background-color: $default-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (min-width: $tableWidth) {
+        min-width: $tableWidth;
+    }
+    @media (min-width: $desktopWidth) {
+        visibility: hidden;
+        position: absolute;
+    }    
+}
+
+.header-body__button {
+    width: 40px;
+    height: 40px;
+    background-color: $default-color;
+    border-radius: 50%;
+    &:first-child {
+        filter: none;
+        width: auto;
+        height: auto;
+        margin-top: 18.59px;
+        margin-bottom: 17.59px;
+    }
+    &:nth-child(2) {
+        order: -1;
+        margin-left: 16px;
+        margin-right: auto;
+    }
+    &:nth-child(3) {
+        order: 2;
+        margin-right: 16px;
+        margin-left: 20px;
+    }
+    &:nth-child(4) {
+        order: 3;
+        margin-right: 16px;
+    }
+    &:nth-child(5) {
+        width: auto;
+        height: auto;
+        filter: none;
+        order: 1;
+        margin-left: auto;
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+    &:nth-child(n + 6) {
+        visibility: hidden;
+        position: absolute;
+    }
+    @media (min-width: $tableWidth) {
+        &:first-child {
+            margin-right:auto;
+        }
+        &:nth-child(2) {
+            order: -2;
+            margin-left: 24px;
+            margin-right: 20px;
+        }
+        &:nth-child(3) {
+            order: 6;
+        }
+        &:nth-child(4) {
+            order: 7;
+            margin-right: 24px;
+        }
+        &:nth-child(5) {
+            order: 5;
+            margin-left: 20px;
+        }
+        &:nth-child(6) {
+            order: 2;
+            margin-left: auto;
+            visibility: visible;
+            position: relative;
+        }
+        &:nth-child(7) {
+            order: 3;
+            margin-left: 16px;
+            visibility: visible;
+            position: relative;
+        }
+        &:nth-child(8) {
+            order: 4;
+            margin-left: 16px;
+            visibility: visible;
+            position: relative;
+        }
+        &:nth-child(9) {
+            width: auto;
+            height: auto;
+            filter: none;
+            order: -1;
+            margin-right: 20.73px;
+            visibility: visible;
+            position: relative;
+        }
+
+    }
+}

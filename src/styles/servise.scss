@@ -1,0 +1,30 @@
+.servise {
+    min-width: $smPhoneWidth;
+    min-height: 498px;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tableWidth) {
+        min-height: 428px;
+    }
+    @media (min-width: $desktopWidth) {
+        width: 1120px;        
+    }    
+}
+
+.servis__menu {
+    margin-top: 24px;
+    @media (min-width: $desktopWidth) {
+        margin-top: 42px;
+    }
+}
+
+.servis__content {
+    margin-top: 24px;
+    @media (min-width: $tableWidth) {
+        margin-top: 32px;
+    }
+    @media (min-width: $desktopWidth) {
+        margin-top: 19.22px;
+    }
+}

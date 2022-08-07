@@ -1,0 +1,10 @@
+import './styles/style.scss';
+import './js/swiperInit.js';
+import './js/main-menu.js';
+import './js/main-content.js';
+import './js/brends.js';
+import './js/technics.js';
+import './js/mobil-menu.js';
+import './js/mobil-popap.js';
+import './js/feedback-popap.js';
+import './js/request-popap.js';

@@ -1,0 +1,154 @@
+.brends {
+    min-width: $smPhoneWidth;        
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    @media (min-width: $desktopWidth) {
+        width: 1120px;       
+    }
+}
+
+.brends__title {
+    min-width: 288px;
+    height: 48px;
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $focus-color;
+    letter-spacing: -0.2px;    
+    background-image: linear-gradient(to right, $primary-color, $default-color);
+    @media (min-width: $tableWidth) {
+        width: $tableWidth;
+        height: 56px;
+        display: inline-flex; 
+        align-items: center;
+        span {
+            width: 338px;
+            margin-left: 24px;            
+        }
+    }
+    @media (min-width: $desktopWidth) {
+        width: $desktopWidth;
+        span {
+            margin-left: 32px;
+        }
+    }
+}
+
+.brends__swiper {    
+    width: 240px;
+    height: 124px;
+    margin-top: 16px;    
+    display: flex;
+    flex-wrap: wrap;       
+    @media (min-width: $resizeSwipe) {
+        width: auto;
+        height: 176px; 
+        margin-top: 8px;      
+        overflow: hidden;
+        &--more {
+            overflow: visible;
+            height: 968px;
+        }
+    }    
+    @media (min-width: 513px) {
+        &--more {            
+            height: 528px;
+        }
+    }
+    @media (min-width: $tableWidth) {
+        &--more {            
+            height: 356px;
+        }
+    }
+    @media (min-width: $desktopWidth) {
+        &--more {            
+            height: 286px;
+        }
+    }
+}
+
+.brends__wrapper {
+    height: 72px;    
+    display: flex;
+    @media (min-width: 321px) {
+        height: 176px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+}
+
+.brends__slide {
+    width: 240px;      
+    height: 72px;    
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    margin-left: 16px;
+    button {
+        height: 72px;
+    }
+    @media (min-width: 321px) {
+        width: 224px;
+        height: 72px;        
+        margin-left: 24px;
+        margin-top: 16px;
+    }
+    @media (min-width: $desktopWidth) {
+        width: 240px;
+
+    }
+}
+
+.brends-pagination { 
+    width: 180px;
+    height: 14px; 
+    margin-left: 58px;
+    margin-top: 16px;
+    overflow: hidden;
+    .swiper-pagination-bullet {
+        background-color: $pagination-color;
+        width: 12px;
+        height: 12px;               
+        &-active {
+            background-color: $form-color;
+        }    
+    }
+    @media (min-width: 321px) {
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.brends__button-more {
+    width: 125px;
+    height: 24px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-medium;
+    color: $success-color;
+    background-color: $primary-color;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: absolute;
+    visibility: hidden;
+    @media (min-width: 321px) {
+        margin-left: 32px;
+        margin-top: 24px;
+        position: relative;
+        visibility: visible;        
+    }
+    @media (min-width: $desktopWidth) {
+        margin-left: 39px;
+    }
+}
+
+.brends__image--noMore {
+    transform: rotate(180deg);
+}
+

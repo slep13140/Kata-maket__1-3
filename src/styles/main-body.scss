@@ -1,0 +1,45 @@
+.main-body__servis {
+    @media (min-width: $desktopWidth) {        
+        position: relative;
+        top: 0;
+        left: 306px;
+    }
+}
+.main-body__brends {
+    position: relative;
+    @media (min-width: $desktopWidth) {        
+        top: 0;
+        left: 306px;
+    }
+}
+.main-body__technics {
+    @media (min-width: $desktopWidth) {
+        position: relative;
+        top: 0;
+        left: 306px;
+    }
+}
+.main-body__prices {
+    @media (min-width: $desktopWidth) {
+        position: relative;
+        top: 0;
+        left: 306px;
+    }    
+}
+.main-body__mobil {
+    position: absolute;    
+    top: 0;
+    left: 0;
+}
+
+.main-body__feedback {
+    position: absolute;    
+    top: 0;
+    right: 0;
+}
+
+.main-body__request {
+    position: absolute;    
+    top: 0;
+    right: 0;
+}
