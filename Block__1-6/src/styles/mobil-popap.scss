@@ -1,0 +1,307 @@
+.mobil-popap {
+    width: $smPhoneWidth;
+    height: 2000px;    
+    opacity: 0;    
+    visibility: hidden;
+    z-index: 50;
+    display: flex;
+    transition: all 0.8s ease 0s;
+    transform: translate(-100%, 0px);
+    @media (min-width: $smPhoneWidth) {
+        width: $tableWidth;
+        flex-direction: column;
+        background-color: $default-color;
+    }
+    @media (min-width: $resizeSwipe) {
+        height: 3470px;
+    }
+
+    @media (min-width: $tableWidth) {
+        width: 1439px;
+        height: 2208px;
+    }
+
+    @media (min-width: $mainWidth) {
+        width: 306px;
+        height: 2066px;
+        transform: translate(0px, 0px);
+        opacity: 1;        
+        visibility: visible;
+    }
+    &--open {
+        visibility: visible;
+        transform: translate(0px, 0px);
+        opacity: 96.05%;
+    }   
+}
+
+.mobil-popap__menu { 
+    width: $smPhoneWidth;
+    position: relative;
+    z-index: 200;
+    background-color: $default-color;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(16px 16px 52px rgba(14, 24, 80, 0.2));
+    @media (min-width: 360px) {
+        width: 360px;
+    }
+    @media (min-width: $tableWidth) {
+        height: 1024px;
+        width: $smPhoneWidth;
+    }
+    @media (min-width: $desktopWidth) {
+        width: 306px;
+        height: 1925px;
+        filter: none;
+    }    
+}
+
+.mobil-popap__header {
+    min-width: $smPhoneWidth;
+    margin-top: 18.73px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    button {
+        background-color: $default-color;
+        &:first-child {
+            margin-left: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        &:nth-child(2) {
+            margin-left: 16.73px;
+            filter: none;            
+        }
+
+        &:last-child {
+            margin-right: 16px;
+            margin-left: 94.73px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    @media (min-width: 360px) {
+        margin-top: 16.78px;
+        button {            
+            &:first-child {
+                margin-left: 24px;
+            }
+            &:nth-child(2) {
+                margin-left: 16.78px;                
+            }
+            &:last-child {
+                margin-right: 24px;
+                margin-left: 111.78px;                
+            }
+        }
+    }
+    @media (min-width: $tableWidth) {
+        width: $smPhoneWidth;
+        margin-top: 18.73px;
+        button {
+            &:nth-child(2) {
+                margin-left: 16.73px;                
+            }
+            &:last-child {                
+                margin-left: 78.73px;                
+            }
+        }
+    }
+    @media (min-width: $desktopWidth) {
+        width: 306px;
+        margin-top: 30px;
+        button {            
+            &:first-child {
+                position: absolute;
+                visibility: hidden;
+            }
+            &:nth-child(2) {
+                margin-left: 22px;                
+            }
+            &:last-child {
+                margin-right: 29px;
+                margin-left: 118.45px;                
+            }
+        }
+    }
+}
+
+.mobil-popap__list {
+    list-style: none;
+    min-height: 416px;
+    margin-top: 26.46px;
+    padding: 0;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+        height: 24px;
+        background-color: $default-color;
+        color: $success-color;
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        filter: none;
+        &:hover {
+            color: $button-color;            
+            
+        }        
+    }    
+    @media (min-width: 360px) {
+        margin-top: 24.78px;
+    }
+    @media (min-width: $tableWidth) {
+        margin-top: 50.46px;
+    }
+    @media (min-width: $desktopWidth) {
+        margin-top: 37.19px;
+    }
+}
+
+.mobil-popap__elem {
+    height: 24px;
+    margin: 24px auto 0 16px;    
+    position: relative;
+    img {
+        position: absolute;
+        visibility: hidden;
+    }
+    @media (min-width: 360px) {
+        margin-left: 24px;
+    }
+    @media (min-width: $tableWidth) {
+        margin-top: 32px;
+    }
+    @media (min-width: $desktopWidth) {
+        margin-top: 28.31px;
+    }
+}
+
+.mobil-popap__cheker {
+    visibility: hidden;
+    position: absolute;    
+}
+
+.mobil-popap__cheker:checked ~ button {    
+    color: $focus-color;
+    img {
+        visibility: visible;    
+        left: -16px;
+        top: -10px;
+        @media (min-width: 360px) {
+            left: -24px;
+        }
+    }
+}
+
+.mobil-popap__icon {
+    margin-top: 32px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    button {
+        margin-left: 16px;
+        background-color: $default-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    @media (min-width: 360px) {
+        margin-left: 8px;
+    }
+    @media (min-width: $tableWidth) {
+        margin-top: 268px;
+    }
+    @media (min-width: $desktopWidth) {
+        margin-left: 3px;
+        margin-top: 241px;
+    }
+}
+
+.mobil-popap__contact {
+    height: 80px;
+    margin-top: 4px;
+    margin-left: 16px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (min-width: 360px) {
+        margin-left: 24px;    
+    }
+    @media (min-width: $desktopWidth) {
+        margin-left: 19px;
+        margin-top: 4.14px;
+    }
+}
+
+.mobil-popap__info {
+    color: $success-color;
+    text-decoration: none;
+    margin-top: 12px;
+    transition-duration: 1s;
+    &:first-child {
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;        
+    }
+    &:last-child {
+        font-family: $font-bold;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &:hover {
+        color: $button-color;
+    }
+    @media (min-width: $desktopWidth) {
+        margin-top: 12.4px;
+    }
+}
+
+.mobil-popap__language {
+    margin-left: 9px;
+    margin-top: 8px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    button {
+        margin-left: 7px;
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: $success-color;
+        background-color: $default-color;
+        filter: none;
+        &:hover {
+            color: $button-color;            
+            
+        }                
+    }
+    @media (min-width: 360px) {
+        margin-left: 17px;
+    }
+    @media (min-width: $tableWidth) {
+        margin-top: 40px;
+    }
+    @media (min-width: $desktopWidth) {
+        margin-left: 14px;
+        margin-top: 40.82px;
+    }
+}
+.mobil-popap__language--activ {
+    label {
+        color: $focus-color;
+    }    
+}
+
+.mobil-popap__language--checker {
+    visibility: hidden;
+    position: absolute;
+}
+

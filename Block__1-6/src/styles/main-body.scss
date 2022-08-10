@@ -1,0 +1,39 @@
+.main-body {
+    min-width: $smPhoneWidth;
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $desktopWidth) {
+        
+        height: 2066px;        
+        flex-wrap: wrap;
+    }
+    @media (min-width: 1440px) {
+        width: 1440px;
+    }    
+}
+.main-body__mobil {
+    position: absolute;    
+    top: -88px;
+    left: 0;
+    @media (min-width: 1440px) {
+        top: 0;
+        position: relative;
+    }
+}
+.main-body__feedback {        
+    top: -88px;
+    right: 0;
+    @media (min-width: $desktopWidth) {
+        top: 0;
+        right: 0;
+    }
+}
+.main-body__request {
+    top: -88px;
+    right: 0;
+    @media (min-width: $desktopWidth) {
+        top: 0;
+        right: 0;
+    }
+}
