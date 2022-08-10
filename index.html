@@ -1,86 +1,338 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header__body">
-            <div class="header__button header__btn-logo">
-                <img src="img/logo.svg" alt="logo">
-            </div>
-            <div class="header__button header__btn-burger">
-                <img src="img/icon-burger.svg" alt="icon-burger">
-            </div>
-            <div class="header__button header-btn-repair">
-                <img src="img/icon-repair.svg" alt="icon-repair">
-            </div>
-            <div class="header__button header-btn-search">
-                <img src="img/icon-search.svg" alt="icon-search">
-            </div>
-            <div class="header__button header__btn-divider1"></div>
-            <div class="header__button header-btn-call">
-                <img src="img/icon-call.svg">
-            </div>
-            <div class="header__button header-btn-chat">
-                <img src="img/icon-chat.svg">
-            </div>
-            <div class="header__button header-btn-profile">
-                <img src="img/icon-profile.svg">
-            </div>
-            <div class="header__button header__btn-divider2"></div>
-        </div>
-    </header>
-    <main>
-        <div class="main-body">
-            <div class="main-header">
-                <div class="main-title">
-                    <div class="main-title__img"><img src="img/highlight.png" alt="highlight"></div>
-                    <div class="main-title__text">Услуги и сервисы</div>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>KataAcademy__1-6</title>
+<script defer="defer" src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body class="body">
+    <div class="body-wraper">
+        <header class="header-body body__header">
+            <button class="header-body__button" type="button"><img src="img/logo.svg" alt="main-logo"></button>
+            <button class="header-body__button" type="button"><img src="img/icon-burger.svg" alt="button-menu"></button>
+            <button class="header-body__button" type="button"><img src="img/icon-repair.svg" alt="button-request"></button>
+            <button class="header-body__button" type="button"><img src="img/icon-checkstatus.svg" alt="checkstatus"></button>
+            <button class="header-body__button" type="button"><img src="img/divider.svg" alt="icon-divider"></button>
+            <button class="header-body__button body__button-call" type="button"><img src="img/icon-call.svg" alt="button-call"></button>
+            <button class="header-body__button body__button-feedback" type="button"><img src="img/icon-chat.svg" alt="button-feedback"></button>
+            <button class="header-body__button" type="button"><img src="img/icon-profile.svg" alt="icon-profile"></button>
+            <button class="header-body__button" type="button"><img src="img/divider.svg" alt="icon-divider"></button>
+        </header>
+        <main class="main-body body__main">
+            <section class="mobil-popap main-body__mobil">
+                <div class="mobil-popap__menu">
+                    <div class="mobil-popap__header">
+                        <button class="mobil-popap__button" type="button"><img src="img/icon-closed.svg" alt="closed"></button>
+                        <button class="mobil-popap__button" type="button"><img src="img/logo.svg" alt="logo"></button>
+                        <button class="mobil-popap__button" type="button"><img src="img/icon-search.svg" alt="search"></button>
+                    </div>
+                    <ul class="mobil-popap__list">
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-1" checked="checked">
+                            <button type="button">
+                                <label for="mobil-popap__checker-1">
+                                    <img src="img/highlight.svg" alt="highlight">Ремонт техники
+                                </label>
+                            </button>                
+                        </li>
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-2">
+                            <button type="button">
+                                <label for="mobil-popap__checker-2">
+                                    <img src="img/highlight.svg" alt="highlight">Услуги и сервисы
+                                </label>
+                            </button>
+                        </li>
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-3">                
+                            <button type="button">
+                                <label for="mobil-popap__checker-3">
+                                    <img src="img/highlight.svg" alt="highlight">Корпоративным клиентам
+                                </label>
+                            </button>
+                        </li>
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-4">                
+                            <button type="button">
+                                <label for="mobil-popap__checker-4">
+                                    <img src="img/highlight.svg" alt="highlight">Продавцам техники
+                                </label>
+                            </button>                
+                        </li>
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-5">                
+                            <button type="button">
+                                <label for="mobil-popap__checker-5">
+                                    <img src="img/highlight.svg" alt="highlight">Партнерам
+                                </label>
+                            </button>                
+                        </li>
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-6">                
+                            <button type="button">
+                                <label for="mobil-popap__checker-6">
+                                    <img src="img/highlight.svg" alt="highlight">Производителям
+                                </label>
+                            </button>                
+                        </li>
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-7">                
+                            <button type="button">
+                                <label for="mobil-popap__checker-7">
+                                    <img src="img/highlight.svg" alt="highlight">Наши сервисные центры
+                                </label>
+                            </button>                
+                        </li>
+                        <li class="mobil-popap__elem">
+                            <input name="mobil-popap__cheker" class="mobil-popap__cheker" type="radio" id="mobil-popap__checker-8">                
+                            <button type="button">
+                                <label for="mobil-popap__checker-8">
+                                    <img src="img/highlight.svg" alt="highlight">Контакты
+                                </label>
+                            </button>                
+                        </li>
+                    </ul>
+                    <div class="mobil-popap__icon">
+                        <button class="body__button-call" type="button"><img src="img/icon-call.svg" alt="button-call"></button>
+                        <button class="body__button-feedback" type="button"><img src="img/icon-chat.svg" alt="button-feedback"></button>
+                        <button type="button"><img src="img/icon-profile.svg" alt="icon-profile"></button>
+                    </div>
+                    <div class="mobil-popap__contact">
+                        <a class="mobil-popap__info" href="#mailto:mail@cps.com">mail@cps.com</a>
+                        <a class="mobil-popap__info" href="#tel:+78008908900">8 800 890 8900</a>            
+                    </div>
+                    <div class="mobil-popap__language">
+                        <button class="mobil-popap__btn-lng" type="button">
+                            <label>
+                                RU<input name="language--checker" class="mobil-popap__language--checker" type="radio">
+                            </label>
+                        </button>
+                        <button class="mobil-popap__btn-lng" type="button">
+                            <label>
+                                EN<input name="language--checker" class="mobil-popap__language--checker" type="radio">
+                            </label>
+                        </button>
+                        <button class="mobil-popap__btn-lng" type="button">
+                            <label>
+                                CH<input name="language--checker" class="mobil-popap__language--checker" type="radio">
+                            </label>
+                        </button>                
+                    </div>
+                </div>                                    
+            </section>
+            <div class="servise main-body__servis">
+                <div class="main-menu servis__menu">
+                    <div class="main-menu__header">
+                        <button type="button" class="main-menu__button">
+                            <img src="img/highlight.svg" alt="highlight">
+                            <span>Услуги и сервисы</span>
+                        </button>                    
+                        <button type="button" class="main-menu__button">
+                            <span>Оставить заявку</span>
+                            <img src="img/icon-repair.svg" alt="button-request" aria-label="Оставить заявку">
+                        </button>
+                        <button type="button" class="main-menu__button">
+                            <span>Статус ремонта</span>
+                            <img src="img/icon-checkstatus.svg" alt="checkstatus" aria-label="Статус ремонта">
+                        </button>                    
+                    </div>
+                    <ul class="main-menu__list">
+                        <li class="main-menu__elem">
+                            <button type="button">
+                                <label>
+                                    Ремонтируемые устройства<input name="main-menu__checker" class="main-menu__checker" type="radio">
+                                </label>
+                            </button>                    
+                        </li>
+                        <li class="main-menu__elem">                        
+                            <button type="button">
+                                <label>
+                                    Дополнительные услуги<input name="main-menu__checker" class="main-menu__checker" type="radio">
+                                </label>
+                            </button>                    
+                        </li>
+                        <li class="main-menu__elem">                        
+                            <button type="button">
+                                <label>
+                                    Цены на услуги<input name="main-menu__checker" class="main-menu__checker" type="radio">
+                                </label>
+                            </button>                    
+                        </li>
+                        <li class="main-menu__elem">                        
+                            <button type="button">
+                                <label>
+                                    Специальные цены<input name="main-menu__checker" class="main-menu__checker" type="radio">
+                                </label>
+                            </button>                    
+                        </li>
+                        <li class="main-menu__elem">                        
+                            <button type="button">
+                                <label>
+                                    Адреса сервисных центров<input name="main-menu__checker" class="main-menu__checker" type="radio">
+                                </label>
+                            </button>                    
+                        </li>
+                        <li class="main-menu__elem">                        
+                            <button type="button">
+                                <label>
+                                    Ремонтируемые бренды<input name="main-menu__checker" class="main-menu__checker" type="radio">
+                                </label>
+                            </button>                    
+                        </li>
+                        <li class="main-menu__elem">                        
+                            <button type="button">
+                                <label>
+                                    Отзывы<input name="main-menu__checker" class="main-menu__checker" type="radio">
+                                </label>
+                            </button>                    
+                        </li>
+                    </ul>
                 </div>
-                <div class="main-button">
-                    <div class="main-button__img"><img src="img/icon-search.svg" alt="icon-search"></div>
-                    <div class="main-button__text">Статус ремонта</div>
-                    <div class="main-button__img"><img src="img/icon-repair.svg" alt="icon-repair"></div>
-                    <div class="main-button__text">Оставить заявку</div>
-                </div>
-
-            </div>
-            <div class="main-menu main-element">
-                <div class="main-element__1">Ремонтируемые устройства</div>
-                <div class="main-element__2">Дополнительные услуги</div>
-                <div class="main-element__3">Цены на услуги</div>
-                <div class="main-element__4">Специальные цены</div>
-                <div class="main-element__5">Адреса сервисных центров</div>
-                <div class="main-element__6">Ремонтируемые бренды</div>
-                <div class="main-element__7">Отзывы</div>
-            </div>
-            <div class="main-general">
-                <input type="checkbox" class="main-content_checker" id="main-content_checker">
-                <div class="main-content">
-                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-                        гарантией производителя.</p>
-
-                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-                        что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
-                        что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным
-                        и близким.</p>
-                </div>
-                <div class="main-scroll">
-                    <div class="main-scroll__text"><label for="main-content_checker">Читать далее</label></div>
-                    <div class="main-scroll__icon"><img src="img/expand.svg"></div>
-                </div>
-                <div class="main-image">
-                    <div class="main__img_small"><img src="img/picture copy.png"></div>
-                    <div class="main__img_big"><img src="img/main_picture.png"></div>
+                <div class="main-content servis__content">                
+                    <div class="main-content__text">
+                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+                            гарантией производителя.</p>
+            
+                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+                            что подтверждает большое количество постоянных клиентов. Мы гордимся тем,
+                            что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным
+                            и близким.</p>
+                    </div>
+                    <button type="button" class="main-content__button-more">
+                        <img class="main-content__img-more" src="img/icon-more.svg" alt="icon-more">
+                        <span>Читать далее</span>
+                    </button>                
+                    <div class="main-content__image content-image"></div>
                 </div>
             </div>
-        </div>
-    </main>
+            <div class="brends main-body__brends">
+                <div class="brends__title"><span>Ремонт техники различных брендов</span></div>              
+                <div class="brends__swiper" data-mobile="false">              
+                  <ul class="brends__wrapper">
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-lenovo.svg" alt="logo-lenovo"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-sumsung.svg" alt="logo-sumsung"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-apple.svg" alt="logo-apple"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-view.svg" alt="logo-view"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-bosch.svg" alt="logo-bosch"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-hp.svg" alt="logo-hp"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-acer.svg" alt="logo-acer"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-sony.svg" alt="logo-sony"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-lenovo.svg" alt="logo-lenovo"></button>
+                    </li>
+                    <li class="brends__slide brends__swiper-slide">
+                      <button type="button"><img src="img/logo-sumsung.svg" alt="logo-sumsung"></button>
+                    </li>
+                    <li class="brends__slide main-menu__element">
+                      <button type="button"><img src="img/logo-apple.svg" alt="logo-apple"></button>
+                    </li>
+                  </ul>
+                  <div class="brends-pagination"></div>
+                </div>
+                <button type="button" class="brends__button-more">
+                    <img class="brends__image-more" src="img/icon-more.svg" alt="icon-more">
+                    <span>Показать все</span>
+                </button>                        
+            </div>
+            <div class="technics main-body__technics">
+                <div class="technics__title"><span>Ремонт различных видов техники</span></div>
+                <div class="technics__swiper" data-mobile="false">
+                    <ul class="technics__wrapper">
+                        <li class="technics__slide">
+                            <button class="technics__button" type="button">
+                                <span>Ремонт ноутбуков</span>
+                                <img src="img/icon-go.svg" alt="icon-go">
+                            </button>
+                        </li>
+                        <li class="technics__slide">
+                            <button class="technics__button" type="button">
+                                <span>Ремонт планшетов</span>
+                                <img src="img/icon-go.svg" alt="icon-go">
+                            </button>
+                        </li>
+                        <li class="technics__slide">
+                            <button class="technics__button" type="button">
+                                <span>Ремонт ПК</span>
+                                <img src="img/icon-go.svg" alt="icon-go">
+                            </button>
+                        </li>
+                        <li class="technics__slide">
+                            <button class="technics__button" type="button">
+                                <span>Ремонт  мониторов</span>
+                                <img src="img/icon-go.svg" alt="icon-go">
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="technics-pagination"></div>
+                </div>            
+                <button type="button" class="technics__button-more">
+                    <img class="technics__image-more" src="img/icon-more.svg" alt="icon-more">
+                    <span>Показать все</span>
+                </button>
+            </div>
+            <div class="prices main-body__prices">
+                <div class="prices__title"><span>цены на услуги</span></div>
+                <div class="prices__swiper" data-mobile="false">
+                    <div class="prices__wrapper"></div>
+                    <div class="prices-pagination"></div>
+                </div>
+                <div class="prices__offer">
+                    <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
+                        Для получения коммерческого предложения на постоянное обслуживание, оставьте 
+                        заявку.
+                    </p>
+                    <button>Получить коммерческое предложение<img src="img/Line.svg" alt="icon-more"></button>
+                </div>                
+            </div>
+            <footer class="body__footer">
+                <span>© 2019 CPS<br> Разработано командой Apesong </span>
+                <span>Политика конфиденциальности</span>
+                <span>Информация, размещенная на данной странице, не является публичной офертой</span>
+            </footer>
+            <section class="feedback-popap main-body__feedback">        
+                <form class="feedback-popap__menu">
+                    <button class="feedback-popap__button" type="button"><img src="img/icon-closed.svg" alt="closed"></button>
+                    <div class="feedback-popap__title"><img src="img/highlight.svg" alt="highlight"><span>Обратная связь</span></div>
+                    <input class="feedback-popap__form" type="text" name="name" placeholder="Имя" required>
+                    <input class="feedback-popap__form" type="tel" name="tel" required placeholder="Телефон">
+                    <input class="feedback-popap__form" type="email" name="email" required placeholder="Электронная почта">
+                    <textarea class="feedback-popap__form" placeholder="Сообщение"></textarea>
+                    <div class="feedback-popap__content">Нажимая “отправить”, вы даете согласие на 
+                        <a href="">обработку персональных данных</a> и соглашаетесь с нашей 
+                        <a href="">политикой конфиденциальности</a></div>
+                    <input class="feedback-popap__form" type="submit" value="ОТПРАВИТЬ   >">
+                </form>
+            </section>
+            <section class="request-popap main-body__request">
+                <form class="request-popap__menu">
+                    <button class="request-popap__button" type="button"><img src="img/icon-closed.svg" alt="closed"></button>
+                    <div class="request-popap__title"><img src="img/highlight.svg" alt="highlight"><span>Заказать звонок</span></div>                
+                    <input class="request-popap__form" type="tel" name="tel" required placeholder="Телефон">
+                    <div class="request-popap__content">Нажимая “отправить”, вы даете согласие на 
+                        <a href="">обработку персональных данных</a> и соглашаетесь с нашей 
+                        <a href="">политикой конфиденциальности</a></div>
+                    <input class="request-popap__form" type="submit" value="ОТПРАВИТЬ   >">
+                </form>
+            </section>         
+        </main>
+    </div>
 </body>
 </html>
